@@ -1,0 +1,309 @@
+/* Home Page Styles */
+.home-page {
+    min-height: calc(100vh - 140px);
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #acf2f5 0%, #83d4d7 100%);
+    padding: 60px 20px;
+    animation: aparecer 0.8s ease;
+}
+
+.hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.hero-image {
+    flex-shrink: 0;
+    animation: aparecer 1s ease;
+}
+
+.patitas-logo {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid #acf2f5;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-title-box {
+    background-color: #83d4d7;
+    border-radius: 60px;
+    padding: 40px;
+    box-shadow: 8px 8px 16px rgba(68, 68, 68, 0.3);
+    margin-bottom: 30px;
+    animation: aparecer 1.2s ease;
+}
+
+.hero-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #000;
+    margin: 0 0 15px 0;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    color: #000;
+    margin: 0;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.hero-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    animation: aparecer 1.4s ease;
+}
+
+.hero-btn {
+    width: 300px;
+    padding: 18px 40px;
+    border: none;
+    border-radius: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.hero-btn.login {
+    background-color: #83d4d7;
+    color: #000;
+}
+
+.hero-btn.register {
+    background-color: #51cf66;
+    color: white;
+}
+
+.hero-btn.admin {
+    background-color: #ff9999;
+    color: #000;
+}
+
+.hero-btn.primary {
+    background-color: #83d4d7;
+    color: #000;
+}
+
+.hero-btn.secondary {
+    background-color: #acf2f5;
+    color: #000;
+}
+
+.hero-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 6px 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+/* Info Section */
+.info-section {
+    background-color: #dffdfe;
+    padding: 30px 20px;
+}
+
+.contact-info {
+    background-color: #acf2f5;
+    border-radius: 50px;
+    padding: 20px 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-text {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #000;
+    margin: 0;
+}
+
+/* Features Section */
+.features-section {
+    padding: 60px 20px;
+    background-color: #dffdfe;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 40px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 6px 6px 16px rgba(68, 68, 68, 0.15);
+    transition: all 0.3s ease;
+    animation: aparecer 0.8s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 8px 8px 20px rgba(68, 68, 68, 0.25);
+}
+
+.feature-icon {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #000;
+    margin: 15px 0;
+}
+
+.feature-card p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Responsive - Tablet */
+@media (max-width: 1024px) {
+    .hero-content {
+        gap: 40px;
+    }
+
+    .patitas-logo {
+        width: 300px;
+        height: 300px;
+    }
+
+    .hero-title {
+        font-size: 24px;
+    }
+
+    .hero-subtitle {
+        font-size: 16px;
+    }
+
+    .hero-btn {
+        width: 250px;
+        font-size: 16px;
+        padding: 15px 30px;
+    }
+}
+
+/* Responsive - Mobile */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 40px 15px;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .patitas-logo {
+        width: 250px;
+        height: 250px;
+    }
+
+    .hero-title-box {
+        padding: 30px 20px;
+        border-radius: 40px;
+    }
+
+    .hero-title {
+        font-size: 20px;
+    }
+
+    .hero-subtitle {
+        font-size: 14px;
+    }
+
+    .hero-btn {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .contact-text {
+        font-size: 18px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+/* Responsive - Small Mobile */
+@media (max-width: 480px) {
+    .patitas-logo {
+        width: 200px;
+        height: 200px;
+    }
+
+    .hero-title {
+        font-size: 18px;
+    }
+
+    .hero-subtitle {
+        font-size: 13px;
+    }
+
+    .hero-btn {
+        font-size: 14px;
+        padding: 12px 20px;
+    }
+
+    .contact-text {
+        font-size: 16px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .feature-icon {
+        font-size: 48px;
+    }
+
+    .feature-card h3 {
+        font-size: 18px;
+    }
+
+    .feature-card p {
+        font-size: 14px;
+    }
+}
